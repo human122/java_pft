@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
   public WebDriver wd;
 
+  private SessionHelper sessionHelper;
   private NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
 
@@ -21,15 +22,8 @@ public class ApplicationManager {
     wd.get("http://localhost/addressbook");
     groupHelper = new GroupHelper(wd);
     navigationHelper = new NavigationHelper(wd);
-    login("admin", "secret");
-  }
-
-  public void login(String username, String password) {
-    wd.findElement(By.name("user")).clear();
-    wd.findElement(By.name("user")).sendKeys(username);
-    wd.findElement(By.name("pass")).clear();
-    wd.findElement(By.name("pass")).sendKeys(password);
-    wd.findElement(By.id("LoginForm")).submit();
+    sessionHelper = new SessionHelper(wd);
+    sessionHelper.login("admin", "secret");
   }
 
   public void stop() {
