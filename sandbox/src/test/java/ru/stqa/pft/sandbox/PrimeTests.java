@@ -11,6 +11,11 @@ public class PrimeTests {
   }
 
   @Test
+  public void testPrimeFast() {
+    Assert.assertTrue(Primes.isPrimeFast(Integer.MAX_VALUE));
+  }
+
+  @Test
   public void testNonPrime() {
     Assert.assertFalse(Primes.isPrime(Integer.MAX_VALUE - 2));
   }
