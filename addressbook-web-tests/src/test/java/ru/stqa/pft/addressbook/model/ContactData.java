@@ -8,8 +8,10 @@ public class ContactData {
   private String firstname;
   private String lastname;
   private String company;
-  private String home_phone;
-  private String mobile;
+  private String homePhone;
+  private String mobilePhone;
+  private String workPhone;
+
   private String email;
 
   @Override
@@ -52,13 +54,18 @@ public class ContactData {
     return this;
   }
 
-  public ContactData withHome_phone(String home_phone) {
-    this.home_phone = home_phone;
+  public ContactData withHomePhone(String homePhone) {
+    this.homePhone = homePhone;
     return this;
   }
 
-  public ContactData withMobile(String mobile) {
-    this.mobile = mobile;
+  public ContactData withMobilePhone(String mobile) {
+    this.mobilePhone = mobile;
+    return this;
+  }
+
+  public ContactData withWorkPhone(String workPhone) {
+    this.workPhone = workPhone;
     return this;
   }
 
@@ -83,12 +90,16 @@ public class ContactData {
     return company;
   }
 
-  public String getHome_phone() {
-    return home_phone;
+  public String getHomePhone() {
+    return homePhone;
   }
 
-  public String getMobile() {
-    return mobile;
+  public String getMobilePhone() {
+    return mobilePhone;
+  }
+
+  public String getWorkPhone() {
+    return workPhone;
   }
 
   public String getEmail() {
@@ -106,4 +117,6 @@ public class ContactData {
             ", lastname='" + lastname + '\'' +
             '}';
   }
+
+
 }
