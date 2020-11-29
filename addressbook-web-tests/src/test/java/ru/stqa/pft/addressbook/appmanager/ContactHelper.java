@@ -98,7 +98,6 @@ public class ContactHelper extends HelperBase {
       String firstname = element.findElement(By.xpath("td[3]")).getText();
       String lastname = element.findElement(By.xpath("td[2]")).getText();
       String allPhones = element.findElement(By.xpath("td[6]")).getText();
-//      String[] phones = allPhones.split("\n");
       contactCache.add(new ContactData()
               .withId(id)
               .withFirstname(firstname)
