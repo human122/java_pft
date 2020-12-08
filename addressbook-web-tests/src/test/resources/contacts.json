@@ -1,0 +1,17 @@
+[
+  {
+    "group": "test1",
+    "firstname": "Petr0",
+    "lastname": "Petrov0"
+  },
+  {
+    "group": "test1",
+    "firstname": "Petr1",
+    "lastname": "Petrov1"
+  },
+  {
+    "group": "test1",
+    "firstname": "Petr2",
+    "lastname": "Petrov2"
+  }
+]
