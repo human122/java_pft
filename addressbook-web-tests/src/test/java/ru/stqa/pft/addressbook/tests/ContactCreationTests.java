@@ -63,7 +63,7 @@ public class ContactCreationTests extends TestBase {
             contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
   }
 
-  @Test
+  @Test(enabled = false)
   public void testBadContactCreation() throws Exception {
     Contacts before = app.contact().all();
     ContactData contact = new ContactData()
