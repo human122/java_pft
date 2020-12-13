@@ -1,0 +1,8 @@
+10:08:46.339 [main] INFO  r.s.pft.addressbook.tests.TestBase - Start test testBadGroupCreation with parameters []
+10:08:49.839 [main] INFO  r.s.pft.addressbook.tests.TestBase - Stop test testBadGroupCreation
+10:08:49.932 [main] INFO  r.s.pft.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
+10:08:52.387 [main] INFO  r.s.pft.addressbook.tests.TestBase - Stop test testGroupCreation
+10:08:52.389 [main] INFO  r.s.pft.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
+10:08:54.699 [main] INFO  r.s.pft.addressbook.tests.TestBase - Stop test testGroupCreation
+10:08:54.701 [main] INFO  r.s.pft.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
+10:08:57.210 [main] INFO  r.s.pft.addressbook.tests.TestBase - Stop test testGroupCreation
